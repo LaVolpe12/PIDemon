@@ -1,112 +1,50 @@
+/* Global styles for the page */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Füge das Hintergrundbild und den Verlauf hinzu */
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Background with gradient and image for the entire page */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
                 url('Background-pic.jpeg') no-repeat center center fixed;
-    background-size: cover; /* Sorgt dafür, dass das Bild den ganzen Bildschirm abdeckt */
-    color: #333;
+    background-size: cover; /* Ensures the background covers the whole viewport */
 }
 
-
-
-
-
-/* Stil für den Header */
+/* Styling for the header */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund, um den Text hervorzuheben */
-    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    color: #4CAF50;
     text-align: center;
-    color: white;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Stile für die Buttons */
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Entferne die explizite Hintergrundfarbe */
-section {
-    margin: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Leicht transparente Hintergrundfarbe, um Text lesbar zu halten */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-h2 {
-    font-size: 22px;
-    color: #FFD700; /* Goldene Farbe für die Titel */
+/* Styling for sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
+/* Styling for headers (h1, h2) */
+h1, h2 {
+    color: #4CAF50; /* Green color for headings */
 }
 
-/* Footer-Stile */
+/* Styling for the footer */
 footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    color: #4CAF50;
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
-    bottom: 0;
     width: 100%;
-    color: white;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile-Optimierung */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
 
