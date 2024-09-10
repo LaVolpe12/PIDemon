@@ -7,12 +7,11 @@ body {
     /* Only background image for the entire page */
     background: url('Background-pic.jpeg') no-repeat center center fixed;
     background-size: cover; /* Ensures the background covers the whole viewport */
-    background-color: #1C1C1C; /* Schwarz-Anthrazit Hintergrundfarbe */
 }
 
 /* Styling for the header */
 header {
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
+    background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
     color: #4CAF50;
     text-align: center;
     padding: 20px;
@@ -24,7 +23,7 @@ header {
 section {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +35,7 @@ h1, h2 {
 
 /* Styling for the footer */
 footer {
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
     color: #4CAF50;
     text-align: center;
     padding: 10px;
