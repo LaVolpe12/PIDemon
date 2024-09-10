@@ -67,14 +67,11 @@ h1, h2 {
 
 /* Styling for the footer */
 footer {
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
+    background-color: rgba(28, 28, 28, 0.8);
     color: #556b2f;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Fügt einen Abstand über dem Footer hinzu */
 }
-
