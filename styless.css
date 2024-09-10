@@ -5,27 +5,27 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     /* Only background image for the entire page */
-    background: url('Background-pic.png') no-repeat center center fixed;
+    background: url('Background-pic.jpeg') no-repeat center center fixed;
     background-size: cover; /* Ensures the background covers the whole viewport */
 }
 
 /* Styling for the header */
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
-    color: #4CAF50;
+    color: #4CAF50; /* Green color for the header text */
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: none; /* Remove background color */
 }
 
 /* Styling for sections */
 section {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none; /* Remove box-shadow */
+    background: none; /* Remove background color */
 }
 
 /* Styling for headers (h1, h2) */
@@ -35,13 +35,39 @@ h1, h2 {
 
 /* Styling for the footer */
 footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
     color: #4CAF50;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: none; /* Remove background color */
 }
+
+/* Button styles - making them larger and orange */
+button {
+    background-color: #FF9800; /* Orange background */
+    color: white; /* White text */
+    font-size: 20px; /* Larger font */
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cool shadow effect */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #E65100; /* Darker orange on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Optional: If you have specific button classes */
+.btn-large {
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
