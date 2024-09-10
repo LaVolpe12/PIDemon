@@ -10,3 +10,16 @@ function toggleSection(sectionId) {
         section.style.display = "none";
     }
 }
+
+window.addEventListener('resize', adjustPadding);
+
+function adjustPadding() {
+    const footer = document.querySelector('footer');
+    const body = document.querySelector('body');
+    const footerHeight = footer.offsetHeight;
+    body.style.paddingBottom = footerHeight + 'px';
+}
+
+// Ruf die Funktion einmal beim Laden der Seite auf, um sicherzustellen,
+// dass das Padding von Anfang an korrekt gesetzt ist.
+adjustPadding();
