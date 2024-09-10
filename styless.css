@@ -9,6 +9,37 @@ body {
     background-size: cover; /* Ensures the background covers the whole viewport */
 }
 
+/* Styling for buttons */
+button {
+    display: block; /* Ensures the button is treated as a block-level element */
+    width: 200px; /* Makes the button larger */
+    height: 60px; /* Increases the height of the button */
+    margin: 20px auto; /* Centers the button horizontally */
+    background-color: #FF5722; /* Orange background color */
+    color: white; /* White text color */
+    font-size: 18px; /* Makes the text larger */
+    font-weight: bold; /* Bold text for emphasis */
+    border: none; /* Removes the default border */
+    border-radius: 30px; /* Rounded corners for a "cool" look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #E64A19; /* Darker orange on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enlarges the shadow on hover */
+    transform: translateY(-4px); /* Lifts the button slightly on hover */
+}
+
+/* Focus effect for buttons */
+button:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 10px #FF5722; /* Adds an orange glow when the button is focused */
+}
+
+
 /* Styling for the header */
 header {
     background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
