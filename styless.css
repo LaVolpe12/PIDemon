@@ -1,6 +1,5 @@
 /* Global styles for the page */
-html, body {
-    height: 100%; /* Ensure body and html take up the full height */
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -8,24 +7,26 @@ html, body {
     /* Only background image for the entire page */
     background: url('Background-pic.jpeg') no-repeat center center fixed;
     background-size: cover; /* Ensures the background covers the whole viewport */
+    background-color: #1C1C1C; /* Schwarz-Anthrazit Hintergrundfarbe */
 }
 
 /* Styling for the header */
 header {
-    color: #4CAF50; /* Green color for the header text */
+    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
+    color: #4CAF50;
     text-align: center;
     padding: 20px;
-    background: none; /* Remove background color */
-    z-index: 1; /* Make sure it stays above the background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for sections */
 section {
     margin: 20px;
     padding: 20px;
-    background: none; /* Remove background color */
-    border-radius: 10px; /* Optional: round the corners */
-    z-index: 1; /* Keep it above the background */
+    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for headers (h1, h2) */
@@ -35,40 +36,14 @@ h1, h2 {
 
 /* Styling for the footer */
 footer {
+    background-color: rgba(28, 28, 28, 0.8); /* Light transparent anthracite background */
     color: #4CAF50;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    background: none; /* Remove background color */
-    z-index: 1; /* Keep it above the background */
-}
-
-/* Button styles - making them larger and orange */
-button {
-    background-color: #FF9800; /* Orange background */
-    color: white; /* White text */
-    font-size: 20px; /* Larger font */
-    padding: 15px 30px; /* Larger padding for a bigger button */
-    border: none; /* No border */
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cool shadow effect */
-    transition: all 0.3s ease; /* Smooth transitions */
-}
-
-/* Hover effect for buttons */
-button:hover {
-    background-color: #E65100; /* Darker orange on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-    transform: translateY(-3px); /* Slight lift on hover */
-}
-
-/* Optional: If you have specific button classes */
-.btn-large {
-    font-size: 24px;
-    padding: 20px 40px;
-    border-radius: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
