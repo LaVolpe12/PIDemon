@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PID-Regler Demonstrator</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -12,17 +13,19 @@
     </header>
 
     <section class="buttons">
-        <button onclick="window.location.href='#theorie'">Theorie</button>
-        <button onclick="window.location.href='#anleitung'">Anleitung</button>
+        <button onclick="toggleSection('theorie')">Theorie</button>
+        <button onclick="toggleSection('anleitung')">Anleitung</button>
     </section>
 
-    <section id="theorie">
+    <!-- Versteckter Theorie-Bereich -->
+    <section id="theorie" style="display:none;">
         <h2>Theorie: Was ist ein PID-Regler?</h2>
         <p>Ein PID-Regler (Proportional-Integral-Derivative) ist ein Regler, der die Differenz zwischen einem gewünschten Sollwert und einem tatsächlichen Istwert minimiert, um das System zu steuern...</p>
         <!-- Füge hier weitere erklärende Inhalte hinzu -->
     </section>
 
-    <section id="anleitung">
+    <!-- Versteckter Anleitung-Bereich -->
+    <section id="anleitung" style="display:none;">
         <h2>Anleitung zur Nutzung des Demonstrators</h2>
         <p>Um den Demonstrator zu verwenden, folge diesen Schritten...</p>
         <!-- Hier kommen die Nutzungsschritte -->
