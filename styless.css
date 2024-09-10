@@ -57,18 +57,18 @@ section {
     background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #ffebcd;
+    color: #f5f5dc;
 }
 
 /* Styling for headers (h1, h2) */
 h1, h2 {
-    color:#f5f5dc; /* Green color for headings */
+    color:#556b2f; /* Green color for headings */
 }
 
 /* Styling for the footer */
 footer {
     background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
-    color: #f5f5dc;
+    color: #556b2f;
     text-align: center;
     padding: 10px;
     position: fixed;
