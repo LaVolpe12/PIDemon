@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #245;
     /* Only background image for the entire page */
     background: url('Background-pic.png') no-repeat center center fixed;
     background-size: cover; /* Ensures the background covers the whole viewport */
@@ -43,7 +43,7 @@ button:focus {
 /* Styling for the header */
 header {
     background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
-    color: #4CAF50;
+    color: #f5f5dc;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -61,13 +61,13 @@ section {
 
 /* Styling for headers (h1, h2) */
 h1, h2 {
-    color: #4CAF50; /* Green color for headings */
+    color:#f5f5dc; /* Green color for headings */
 }
 
 /* Styling for the footer */
 footer {
     background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
-    color: #4CAF50;
+    color: #f5f5dc;
     text-align: center;
     padding: 10px;
     position: fixed;
