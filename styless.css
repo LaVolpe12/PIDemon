@@ -1,83 +1,101 @@
-/* Global styles for the page */
+/* General reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body takes up the full width and height */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: #245;
-    /* Only background image for the entire page */
     background: url('Background-pic.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the background covers the whole viewport */
+    background-size: cover;
+    min-height: 100vh;
 }
 
-.video-section {
-    text-align: center;
-    margin: 20px auto;
-}
-
-.video-section iframe {
+/* Responsive video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to the video */
-    border-radius: 10px; /* Rounds the corners of the video frame */
 }
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
-/* Styling for buttons */
+/* Responsive buttons */
 button {
-    display: block; /* Ensures the button is treated as a block-level element */
-    width: 200px; /* Makes the button larger */
-    height: 60px; /* Increases the height of the button */
-    margin: 20px auto; /* Centers the button horizontally */
-    background-color: #FF5722; /* Orange background color */
-    color: white; /* White text color */
-    font-size: 18px; /* Makes the text larger */
-    font-weight: bold; /* Bold text for emphasis */
-    border: none; /* Removes the default border */
-    border-radius: 30px; /* Rounded corners for a "cool" look */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: block;
+    width: 90%; /* 90% of the screen width */
+    max-width: 300px; /* Maximum width to avoid it being too large on bigger screens */
+    height: 60px;
+    margin: 20px auto;
+    background-color: #FF5722;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Hover effect for buttons */
 button:hover {
-    background-color: #E64A19; /* Darker orange on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enlarges the shadow on hover */
-    transform: translateY(-4px); /* Lifts the button slightly on hover */
+    background-color: #E64A19;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
 }
 
-/* Focus effect for buttons */
 button:focus {
-    outline: none; /* Removes default focus outline */
-    box-shadow: 0 0 10px #FF5722; /* Adds an orange glow when the button is focused */
+    outline: none;
+    box-shadow: 0 0 10px #FF5722;
 }
 
-
-/* Styling for the header */
+/* Header styling */
 header {
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
+    background-color: rgba(28, 28, 28, 0.8);
     color: #f5f5dc;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-/* Styling for sections */
+/* Responsive sections */
 section {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(28, 28, 28, 0.8); /* Light transparent background */
+    background-color: rgba(28, 28, 28, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #f5f5dc;
+    max-width: 90%;
+    margin: 20px auto;
 }
 
-/* Styling for headers (h1, h2) */
+/* Headings */
 h1, h2 {
-    color:#556b2f; /* Green color for headings */
+    color: #556b2f;
 }
 
-/* Styling for the footer */
+/* Footer stays responsive */
 footer {
     background-color: rgba(28, 28, 28, 0.8);
     color: #556b2f;
@@ -88,5 +106,7 @@ footer {
     bottom: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    left: 0;
 }
 
