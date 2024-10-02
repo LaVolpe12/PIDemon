@@ -9,6 +9,18 @@ body {
     background-size: cover; /* Ensures the background covers the whole viewport */
 }
 
+.video-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.video-section iframe {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to the video */
+    border-radius: 10px; /* Rounds the corners of the video frame */
+}
+
+
 /* Styling for buttons */
 button {
     display: block; /* Ensures the button is treated as a block-level element */
