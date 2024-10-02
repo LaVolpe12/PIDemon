@@ -12,10 +12,16 @@
         <h1>Herzlich Willkommen, lerne alles über den Demonstrator</h1>
     </header>
 
-    <section class="buttons">
-        <button onclick="toggleSection('theorie')">Theorie</button>
-        <button onclick="toggleSection('anleitung')">Anleitung</button>
-    </section>
+    <section class="video-section">
+    <!-- Embed YouTube video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MjuOIc--yTQ" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    
+    <!-- Button linking to GitHub -->
+    <button onclick="window.location.href='https://github.com/LaVolpe12/PID-Demonstrator-BallnBeam'">Zum GitHub</button>
+</section>
+
 
     <!-- Versteckter Theorie-Bereich -->
     <section id="theorie" style="display:none;">
@@ -34,15 +40,8 @@
 
     </section>
 
-    <!-- Versteckter Anleitung-Bereich -->
-    <section id="anleitung" style="display:none;">
-        <h2>Anleitung zur Nutzung des Demonstrators</h2>
-        <p>Um den Demonstrator zu verwenden, folge diesen Schritten...</p>
-        <!-- Hier kommen die Nutzungsschritte -->
-    </section>
-
     <footer>
-        <p>&copy; 2024 Dein Roboterprojekt</p>
+        <p>&copy; Ein Hochschulprojekt von Ferdinand Lührig und Adriano Volpe | TH Köln </p>
     </footer>
 </body>
 </html>
